@@ -49,37 +49,45 @@ ThemeData getDefaultTheme() {
     inputDecorationTheme: InputDecorationTheme(
       hoverColor: Colors.transparent,
       border: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(8.0),
+        borderRadius: BorderRadius.circular(16.0),
         borderSide: BorderSide(
           color: Colors.grey[300]!,
         ),
       ),
       enabledBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(8.0),
+        borderRadius: BorderRadius.circular(16.0),
         borderSide: BorderSide(
           color: Colors.transparent,
         ),
       ),
       errorBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(8.0),
+        borderRadius: BorderRadius.circular(16.0),
         borderSide: BorderSide(
           color: Colors.red,
         ),
       ),
       disabledBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(8.0),
+        borderRadius: BorderRadius.circular(16.0),
         borderSide: BorderSide(
           color: Colors.grey[300]!,
         ),
       ),
       focusedBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(8.0),
+        borderRadius: BorderRadius.circular(16.0),
         borderSide: BorderSide(
           color: primaryColor,
         ),
       ),
       filled: true,
       fillColor: Color(0xfffbfbfb),
+    ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: Color(0xffc57c4e),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(16.0),
+        ),
+      ),
     ),
   );
 }
