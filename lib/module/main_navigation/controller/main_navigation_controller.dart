@@ -1,18 +1,18 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hyper_ui/core.dart';
+import '../state/main_navigation_state.dart';
 
 mixin _CubitLifecycle {
   void initState() {}
   void dispose() {}
 }
 
-class LoginController extends Cubit<LoginState> with _CubitLifecycle {
-  LoginController() : super(LoginState());
+class MainNavigationController extends Cubit<MainNavigationState>
+    with _CubitLifecycle {
+  MainNavigationController() : super(MainNavigationState());
 
   @override
   void initState() {
     //initState event
-    state.email = DBService.get("email");
     super.initState();
   }
 
@@ -28,12 +28,8 @@ class LoginController extends Cubit<LoginState> with _CubitLifecycle {
     return super.close();
   }
 
-  increment() {
-    state.counter++;
+  updateIndex(int newIndex) {
+    state.selectedIndex = newIndex;
     emit(state.copyWith());
-  }
-
-  login() async {
-    Get.offAll(MainNavigationView());
   }
 }

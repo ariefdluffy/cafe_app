@@ -7,6 +7,7 @@ import 'package:hyper_ui/shared/widget/form/textfield/text_field.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import '../controller/login_controller.dart';
 import '../state/login_state.dart';
+import 'package:hyper_ui/service/db_service.dart';
 
 class LoginView extends StatefulWidget {
   const LoginView({Key? key}) : super(key: key);
@@ -101,9 +102,10 @@ class _LoginViewState extends State<LoginView> {
                         label: "Email",
                         validator: Validator.email,
                         suffixIcon: Icons.email,
-                        value: null,
+                        value: controller.state.email,
                         onChanged: (value) {
                           controller.state.email = value;
+                          DBService.set("email", value);
                         },
                       ),
                       QTextField(

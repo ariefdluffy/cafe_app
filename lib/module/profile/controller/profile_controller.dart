@@ -1,18 +1,18 @@
+
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hyper_ui/core.dart';
+import '../state/profile_state.dart';
 
 mixin _CubitLifecycle {
   void initState() {}
   void dispose() {}
 }
 
-class LoginController extends Cubit<LoginState> with _CubitLifecycle {
-  LoginController() : super(LoginState());
+class ProfileController extends Cubit<ProfileState> with _CubitLifecycle {
+  ProfileController() : super(ProfileState());
 
   @override
   void initState() {
     //initState event
-    state.email = DBService.get("email");
     super.initState();
   }
 
@@ -32,8 +32,7 @@ class LoginController extends Cubit<LoginState> with _CubitLifecycle {
     state.counter++;
     emit(state.copyWith());
   }
-
-  login() async {
-    Get.offAll(MainNavigationView());
-  }
 }
+    
+      
+    

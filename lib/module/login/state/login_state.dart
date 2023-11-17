@@ -5,6 +5,6 @@ part 'login_state.freezed.dart';
 class LoginState with _$LoginState {
   factory LoginState(
       {@Default(0) int counter,
-      @Default("") String email,
-      @Default("") String password}) = _LoginState;
+      @Default(null) String? email,
+      @Default(null) String? password}) = _LoginState;
 }
