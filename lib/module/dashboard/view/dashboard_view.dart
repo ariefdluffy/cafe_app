@@ -136,9 +136,7 @@ class _DashboardViewState extends State<DashboardView> {
                               child: Material(
                                 color: Colors.blueGrey[900],
                                 child: InkWell(
-                                  onTap: () {
-                                    // TODO: Add action here
-                                  },
+                                  onTap: () {},
                                   child: Container(
                                     padding: EdgeInsets.all(8.0),
                                     child: Icon(
