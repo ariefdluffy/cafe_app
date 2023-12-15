@@ -58,12 +58,13 @@ class _QCategoryPickerState extends State<QCategoryPicker> {
         Text(
           "${widget.label}",
           style: TextStyle(
-            fontSize: 12.0,
+            fontSize: 14.0,
             color: Theme.of(context).textTheme.bodySmall?.color,
+            // color: Colors.white,
           ),
         ),
         SizedBox(
-          height: 6.0,
+          height: 4.0,
         ),
       ],
     );
@@ -129,6 +130,7 @@ class _QCategoryPickerState extends State<QCategoryPicker> {
                         }
 
                         return Container(
+                          height: 40,
                           margin: const EdgeInsets.only(
                             right: 12.0,
                           ),
