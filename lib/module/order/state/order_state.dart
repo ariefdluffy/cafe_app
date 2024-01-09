@@ -1,4 +1,3 @@
-
 import 'package:freezed_annotation/freezed_annotation.dart';
 part 'order_state.freezed.dart';
 
@@ -8,5 +7,3 @@ class OrderState with _$OrderState {
     @Default(0) int counter,
   }) = _OrderState;
 }
-    
-    

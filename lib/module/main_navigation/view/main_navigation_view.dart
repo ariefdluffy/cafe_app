@@ -58,6 +58,8 @@ class _MainNavigationViewState extends State<MainNavigationView> {
         ),
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: controller.state.selectedIndex,
+          selectedItemColor: primaryColor,
+          showUnselectedLabels: false,
           onTap: (newIndex) => controller.updateIndex(newIndex),
           type: BottomNavigationBarType.fixed,
           items: const [

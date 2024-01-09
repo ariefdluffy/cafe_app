@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../controller/order_controller.dart';
@@ -71,5 +70,3 @@ class _OrderViewState extends State<OrderView> {
     );
   }
 }
-    
-    

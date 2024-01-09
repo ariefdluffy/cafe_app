@@ -1,4 +1,3 @@
-
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../state/order_state.dart';
 
@@ -33,6 +32,3 @@ class OrderController extends Cubit<OrderState> with _CubitLifecycle {
     emit(state.copyWith());
   }
 }
-    
-      
-    

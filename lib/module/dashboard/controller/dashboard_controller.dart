@@ -1,4 +1,3 @@
-
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../state/dashboard_state.dart';
 
@@ -33,6 +32,3 @@ class DashboardController extends Cubit<DashboardState> with _CubitLifecycle {
     emit(state.copyWith());
   }
 }
-    
-      
-    
